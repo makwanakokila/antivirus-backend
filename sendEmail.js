@@ -18,8 +18,8 @@ async function sendMail() {
   });
 
   const htmlContent = `
-    <h2 style="color: #2563eb;">Virex Security - License Key</h2>
-    <p>Thank you for choosing Virex Security!</p>
+    <h2 style="color: #2563eb;">V-Nashak Security - License Key</h2>
+    <p>Thank you for choosing V-Nashak Security!</p>
     <div style="background: #f1f5f9; padding: 16px; border-radius: 8px; margin: 16px 0;">
       <p><strong>Your License Key:</strong></p>
       <p style="font-size: 24px; font-weight: bold;">${licenseKey}</p>
@@ -28,9 +28,9 @@ async function sendMail() {
   `;
 
   const mailOptions = {
-    from: `"Virex Security" <${process.env.EMAIL_USER}>`,
+    from: `"V-Nashak Security" <${process.env.EMAIL_USER}>`,
     to: email,
-    subject: "Your Virex License Key",
+    subject: "Your V-Nashak License Key",
     html: htmlContent
   };
 
